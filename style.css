@@ -1,0 +1,159 @@
+body {
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.titolo-teminale {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font: bold 14px 'Courier New', Courier, monospace;
+    position: absolute; left: 50%;
+    white-space: nowrap;
+}
+
+.finestra {
+width: 1000px;
+height: 500px;
+background-color: black;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.barra {
+    background-color: #444444;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    position: relative;
+}
+
+.barra span {
+    display: flex;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 9px 5px;
+}
+
+.rosso {
+    background-color: #ff5f57;
+}
+
+.giallo {
+    background-color: #febc2e;
+}
+
+.verde {
+    background-color: #28c840 ;
+}
+
+.testo-schermo {
+    padding: 20px;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.scritte-terminale {
+    color: #06ff06;
+}
+
+@keyframes animazione-scritte {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.classe-p1 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 0s;
+opacity: 0;
+}
+
+.classe-p2 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 0.5s;
+opacity: 0;
+}
+
+.classe-p3 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 1s;
+opacity: 0;
+}
+
+.classe-p4 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 1.5s;
+opacity: 0;
+}
+
+.classe-p5 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 2s;
+opacity: 0;
+}
+
+.classe-p6 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 2.5s;
+opacity: 0;
+}
+
+.classe-p7 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 3s;
+opacity: 0;
+}
+
+.classe-p8 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 3.5s;
+opacity: 0;
+}
+
+.classe-p9 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 4s;
+opacity: 0;
+}
+
+.classe-p10 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 4.5s;
+opacity: 0;
+}
+
+.classe-p11 {
+animation: animazione-scritte 0.5s forwards;
+animation-delay: 5s;
+opacity: 0;
+}
+
+.cursore{
+    animation:animazione-cursore 1s infinite;
+}
+
+@keyframes animazione-cursore {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.testo-schermo p{
+margin: 10px;
+}
+
+.finestra::after{
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: repeating-linear-gradient(transparent 0px, transparent 2px, rgba(0, 0, 0, 0.3) 2px, rgba(0, 0, 0, 0.3) 4px);
+    pointer-events: none;
+    opacity: 0.2; 
+}
